@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.scroll-container {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .auto-scroll {
+    animation: scroll linear infinite;
+    animation-duration: 2s; /* Adjust the duration as needed */
+  }
+/* .a .active{
+  text-decoration: underline;
+  color: red;
+} */
